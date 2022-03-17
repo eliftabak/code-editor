@@ -2,11 +2,13 @@ window.onload = function () {
   let d = document;
   let q = "querySelector";
   let iframe = d[q]("iframe");
+  
   const area = document.querySelectorAll("textarea");
   const saveBtn = document.querySelector(".js-run-btn");
   const minimizeBtn = document.querySelector(".js-minimize");
   const codeSections = document.querySelector(".js-section-container");
   const toggleIcon = document.querySelector(".js-toggle-icon");
+  const iframeElem = document.querySelector("#iframe");
 
 
   minimizeBtn.addEventListener("click", () => {
@@ -14,10 +16,12 @@ window.onload = function () {
      codeSections.classList.remove("hidden");
      toggleIcon.classList.add("fa-minus");
      toggleIcon.classList.remove("fa-plus");
+     iframeElem.style.height = "60%";
      window.screenY(0);
    } else {
      codeSections.classList.add("hidden");
      toggleIcon.classList.remove("fa-minus");
+     iframeElem.style.height = "82%";
      toggleIcon.classList.add("fa-plus");
    }
   });

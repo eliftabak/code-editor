@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/5191249231.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="index.css">
-  <title>Code Editor</title>
- </head>
- <body>
-  <iframe id="ifame"></iframe>
-  
-  <div class="code">
-   <button class="js-run-btn btn">
-    <i class="fa fa-play"></i>
-   </button>
-   <div class="editor">
-    <button class="js-minimize btn">
-     <i class="fa fa-minus js-toggle-icon"></i>
-    </button>
-    <div class="section-container js-section-container">
-     <section class="js-section" id="html"><textarea placeholder="html"></textarea></section>
-     <section class="js-section" id="css"><textarea placeholder="CSS"></textarea></section>
-     <section class="js-section" id="js"><textarea placeholder="JS"></textarea></section>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5191249231.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Code Editor</title>
+  </head>
+  <body>
+    <iframe id="iframe"></iframe>
+    <div class="code">
+      <button class="js-run-btn btn">
+        <i class="fa fa-play"></i>
+      </button>
+      <div class="editor">
+        <button class="js-minimize btn">
+          <i class="fa fa-minus js-toggle-icon"></i>
+        </button>
+        <div class="section-container js-section-container">
+          <section>
+            <textarea placeholder="html"></textarea>
+          </section>
+          <section>
+            <textarea placeholder="CSS"></textarea>
+          </section>
+          <section>
+            <textarea placeholder="JS"></textarea>
+          </section>
+        </div>
+      </div>
     </div>
-   </div>
-  </div>
-  <script src="index.js"></script>
- </body>
+    <script src="index.js"></script>
+  </body>
 </html>
